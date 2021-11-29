@@ -11,3 +11,8 @@ install( DIRECTORY
 	DESTINATION
 	lib/swift/CJavaVM
 )
+
+install(TARGETS CJavaVM
+  ARCHIVE DESTINATION lib/swift/android
+  LIBRARY DESTINATION lib/swift/android
+  RUNTIME DESTINATION bin)
